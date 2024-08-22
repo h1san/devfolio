@@ -1,0 +1,290 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-light-black{
+    background-color: #00000086;
+}
+
+.fs-special{
+    font-size: 55px;
+}
+
+.w-9{
+    width: 60rem;
+}  
+
+
+.w-85{
+    width: 85%;
+}
+
+.bg-special-blue{
+    background-color: #0078FF;
+}
+
+
+/*&******************************** nav style *********************/
+.nav-link{
+    position: relative;
+}
+
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 0%;
+    height: 1px;
+    bottom:2px;
+    left: 10px;
+    transition: width 500ms;
+}
+
+.nav-link:hover::before{
+    width: 60%;
+}
+
+.nav-link.active::before{
+    width: 60%;
+}
+
+
+
+/* ! -----------------animation---------------- */
+.header span{
+    display: inline-block;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+.header span:first-of-type{
+    animation:freelancer 8s infinite ;
+}
+
+@keyframes freelancer {
+    0%,33.33%,100%{
+        width: 0;
+    }
+
+    16.5%{
+        width: calc(10*21.45px);
+    }
+}
+
+.header span:nth-last-of-type(2){
+    animation: photographer 8s infinite ;
+}
+@keyframes photographer{
+    0%,32%,63.6%,100%{
+        width: 0;
+    }
+
+    49.5%{
+        width: calc(22.49*12px);
+    }
+}
+.header span:last-of-type{
+    animation:designer 8s infinite ;
+}
+
+@keyframes designer{
+    0%,62%,99%,100%{
+        width: 0;
+    }
+    82.5%{
+        width: calc(21.3*8px);
+    }
+}
+
+/*&---------------- about -------------------*/
+.about .abt-item{
+    box-shadow: 0PX 0PX 7PX #0000004d;
+}
+
+.pic{
+    height: 150px;
+    background-color: bisque;
+}
+
+span.abt-title{
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.abt-title span{
+    font-weight: 100;
+}
+
+.about .progress{
+    margin-bottom: 1.25rem;
+    margin-top: .3125rem;
+    --bs-border-radius:0px;
+}
+
+h2{
+    position: relative;
+}
+
+.b-line::before{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    width: 20%;
+    height: 3px;
+    background-color: #0078FF;
+    
+}
+
+/*&************ services *********/
+
+.section-header{
+    position: relative;
+}
+
+.section-header::before{
+    content: "";
+    height: 5px;
+    width: 40px;
+    bottom: -10px;
+    position: absolute;
+    background-color: #0078FF;
+    margin: 0px auto;
+    transform: translateX(-50%);
+}
+
+.serv-icon{
+    width: 120px;
+    height: 120px ;
+    border: 8px solid #0078FF;
+    transition: border 500ms,color 500ms,background-color 500ms;
+}
+
+.services .inner:hover .serv-icon{
+border: 8px solid #CDE1F8;
+background-color: #0078FF ;
+color: #ffffff;
+}
+   
+.services .inner{
+    box-shadow: 0PX 0PX 7PX #0000004d;
+}
+
+/*------------------ info -------*/
+.info-layer{
+    background-color: hsla(212, 85%, 50%, 0.692);
+}
+
+.info-icon{
+    width: 80px;
+    height: 80px ;
+    border: 10px solid #BAD4F2;
+}
+
+/*!------------------------------ work ---------------------*/
+.work-inner{
+    box-shadow: 0PX 0PX 7PX #0000004d;
+}
+.work .work-inner span{
+    font-size: 13px;
+}
+
+.work .work-inner .design{
+    color: #0078FF;
+}
+
+.work .work-inner i{
+    right: 10px;
+    bottom: 20px;
+    color: #0078FF;
+}
+
+.work .work-inner img{
+    transition: scale 800ms;
+}
+
+
+.work-inner:hover img{
+    scale: 1.2;
+}
+
+/* -----------manage -----------------*/
+.manage-layer{
+
+    background-color: hsla(212, 85%, 50%, 0.692);
+}
+
+.avatar{
+    width: 150px;
+    height: 150px;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50% ;
+}
+
+/*-----------------------------------blog -----------------*/
+.morgan-icon{
+    width: 35px;
+    height: 35px;
+} 
+
+.blog .inner{
+    box-shadow: 0PX 0PX 1PX #000000bd;
+}
+
+.special{
+    font-size: 11px;
+}
+
+.blog .inner h3:hover{
+    color: #0078FF;
+    transition: color 500ms;
+
+}
+
+.morgan{
+    background-color: #F8F8F8;
+}
+
+.special-title:hover{
+    color: #0078FF ;
+    transition: color 500ms;
+
+}
+/*-------------------------- contact ---------------------*/
+.input-group textarea{
+    max-height: 150px;
+    min-height: 150px;
+}
+.contact form input{
+    
+    border-radius: 0;
+}
+.contact .icons i{
+    color: #0078FF ;
+}
+
+.contact .social-icons{
+    width: 45px;
+    height: 45px;
+    border: 3px solid #0078FF  ;
+    --bs-link-color-rgb:#000;
+    transition: background-color 500ms, border 500ms, color 500ms;
+}
+
+.contact .social-icons:hover{
+    background-color: #0078FF;
+    border: 3px solid #D2C8DC;
+    color:white;}
+
+    .contact .social-icons:hover a{
+        color: #ffffff;
+    }
+    /*!----------------------- foooter -----------------*/
+
+    .footer{
+        background-color: #0062D3;
+    }
